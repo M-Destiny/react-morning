@@ -21,7 +21,7 @@ export default function Adddata() {
   }
   return (
     <Container>
-      <Form onSubmit={myfunc}>
+      <Form onSubmit={handleSubmit(myfunc)}>
         <Form.Group className="mb-3" controlId="formBasicEmail" >
           <Form.Label>Title</Form.Label>
           <Form.Control type="text" placeholder="Enter Title" {...register("title", { required: true })} />
@@ -41,7 +41,7 @@ export default function Adddata() {
           <option value="jewelery">jewelery</option>
           <option value="men's clothing">men's clothing</option>
           <option value="Women's clothing">Women's clothing</option>
-          {errors.category?.type === 'required' && <p role="alert">Title is required</p>}
+          {errors.category?.type === 'required' && <p role="alert">Category is required</p>}
 
         </Form.Select>
 
@@ -49,7 +49,7 @@ export default function Adddata() {
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Image Path</Form.Label>
           <Form.Control type="text" placeholder="Enter Image PAth"  {...register("path", { required: true })} />
-          {errors.path?.type === 'required' && <p role="alert">Title is required</p>}
+          {errors.path?.type === 'required' && <p role="alert">Image Path is required</p>}
 
         </Form.Group>
 
@@ -59,9 +59,9 @@ export default function Adddata() {
             as="textarea"
             placeholder="Leave a comment here"
             style={{ height: '100px' }}
-            {...register("description", { required: true, maxLength: 100 })}
+            {...register("description", { required: true, pattern: /^[A-Za-z]+$/i, maxLength: 100 })}
           />
-          {errors.description?.type === 'required' && <p role="alert">Title is required</p>}
+          {errors.description?.type === 'required' && <p role="alert">Description is required</p>}
           {errors.description?.type === 'maxlength' && <p role="alert">Max length is 100</p>}
 
 
