@@ -32,6 +32,18 @@ function Header() {
               <li class="nav-item">
                 <Link class="nav-link" to="/crud-add">Crud-Add</Link>
               </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/comp1">Comp1</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/comp2">Comp2</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/comp3">Comp3</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/Task">Task</Link>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown

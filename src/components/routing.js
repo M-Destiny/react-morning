@@ -12,6 +12,10 @@ import Filterpro from "./Filterpro";
 import Add from "./Add";
 import Selectdata from "./Selectdata";
 import Adddata from "./Adddata";
+import Comp1 from "./Comp1";
+import Comp2 from "./Comp2";
+import Comp3 from "./Comp3";
+import Task1 from "./Task1";
 
 const router = createBrowserRouter([
     {
@@ -57,6 +61,22 @@ const router = createBrowserRouter([
             {
                 path: 'crud-add',
                 element: <Adddata />
+            },
+            {
+                path: 'comp1',
+                element: <Comp1 name="Damn" />
+            },
+            {
+                path: 'comp2',
+                element: <Comp2 />
+            },
+            {
+                path: 'comp3',
+                element: <Comp3 />
+            },
+            {
+                path: 'task',
+                element: <Task1 />
             },
         ]
     }
