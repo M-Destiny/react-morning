@@ -28,6 +28,7 @@ export default class Task1 extends Component {
     }
     componentDidUpdate() {
         // console.log('ComponentDidUpdate Called');
+
         var cat = this.input.current.value;
         fetch('https://fakestoreapi.com/products/category/' + cat)
             .then(res => res.json())
@@ -38,6 +39,19 @@ export default class Task1 extends Component {
             })
 
     }
+    //     componentDidUpdate(prevProps, prevState) {
+    //         // console.log('ComponentDidUpdate Called');
+    //         var cat = this.input.current.value;
+    //         componentDidUpdate(prevProps, prevState) {
+    //             if (prevState.ApiValue !== this.state.ApiValue) {
+    //                 this.setState({
+    //                     loading: false
+    //                 })   
+    //             }
+    //         }
+
+    //     }
+    // }
     render() {
         return (
             <div className='container'>

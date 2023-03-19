@@ -16,6 +16,8 @@ import Comp1 from "./Comp1";
 import Comp2 from "./Comp2";
 import Comp3 from "./Comp3";
 import Task1 from "./Task1";
+import Cycle from "./Cycle";
+import Parent from "./Parent";
 
 const router = createBrowserRouter([
     {
@@ -77,6 +79,14 @@ const router = createBrowserRouter([
             {
                 path: 'task',
                 element: <Task1 />
+            },
+            {
+                path: 'cycle',
+                element: <Cycle age='20' />
+            },
+            {
+                path: 'parent',
+                element: <Parent />
             },
         ]
     }
