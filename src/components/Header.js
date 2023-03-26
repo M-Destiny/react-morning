@@ -50,6 +50,12 @@ function Header() {
               <li class="nav-item">
                 <Link class="nav-link" to="/parent">Parent</Link>
               </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/classa">Class A</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/maina">Main</Link>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown

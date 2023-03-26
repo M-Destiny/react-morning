@@ -18,6 +18,9 @@ import Comp3 from "./Comp3";
 import Task1 from "./Task1";
 import Cycle from "./Cycle";
 import Parent from "./Parent";
+import ClassA from "./ClassA";
+import Main from "./Main";
+
 
 const router = createBrowserRouter([
     {
@@ -87,6 +90,14 @@ const router = createBrowserRouter([
             {
                 path: 'parent',
                 element: <Parent />
+            },
+            {
+                path: 'classa',
+                element: <ClassA />
+            },
+            {
+                path: 'maina',
+                element: <Main />
             },
         ]
     }
