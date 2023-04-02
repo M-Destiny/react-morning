@@ -35,8 +35,6 @@ class CrudService {
                 console.error('Error:', error);
             }
             );
-
-
     }
     // TODO: add a function to delete the data in existing row 
     // TODO: add a button to delete the data in existing row

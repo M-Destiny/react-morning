@@ -41,7 +41,7 @@ export default function Singleproduct() {
                 </div>
             </Row>
         </Container>
-
+    
     )
 }
 // Material UI css , Ant design css, Bootstrap css
