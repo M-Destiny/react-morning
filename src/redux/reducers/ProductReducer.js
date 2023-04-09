@@ -15,7 +15,8 @@ function ProductReducer(state = initialState, { type, payload }) {
             console.log(newdata);
             state = newdata;
 
-        default: return state
+        default:
+            return state
 
     }
 
