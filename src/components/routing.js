@@ -20,6 +20,7 @@ import Cycle from "./Cycle";
 import Parent from "./Parent";
 import ClassA from "./ClassA";
 import Main from "./Main";
+import ReduxStore from "./ReduxStore";
 
 
 
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
             {
                 path: 'maina',
                 element: <Main />
+            },
+            {
+                path: 'redux-store',
+                element: <ReduxStore />
             },
         ]
     }
